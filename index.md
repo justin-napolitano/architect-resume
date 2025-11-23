@@ -3,39 +3,57 @@ slug: "github-architect-resume"
 title: "architect-resume"
 repo: "justin-napolitano/architect-resume"
 githubUrl: "https://github.com/justin-napolitano/architect-resume"
-generatedAt: "2025-11-23T08:14:17.931883Z"
+generatedAt: "2025-11-23T08:36:37.771367Z"
 source: "github-auto"
 ---
 
 
-# Building My Architect Resume Template: A Personal Journey
+# architect-resume: Technical Overview and Implementation Notes
 
-When I first started looking for a resume template that truly reflected my professional identity as an architect, I found myself frustrated. Most templates were either too generic or too rigid, lacking the flexibility I needed to highlight my unique skills and projects. That's when I decided to create my own LaTeX-based resume template — architect-resume.
+This project provides a LaTeX-based resume template optimized for architects and professionals who require a clean, customizable CV. The template leverages XeLaTeX for advanced font and Unicode support and includes multiple page styles to accommodate different presentation preferences.
 
-## Motivation
+## Motivation and Problem Statement
 
-The motivation behind architect-resume was simple: I wanted a clean, professional, and customizable resume that could be easily maintained and updated using LaTeX. I was inspired by popular templates like AltaCV and AwesomeCV, but I needed something tailored to my style and workflow. I also wanted to leverage XeLaTeX for its superior font and Unicode support, which is essential for the diverse typographic needs in architecture.
+Architects and similar professionals often need resumes that balance visual clarity with detailed content. Traditional word processors can be limiting in layout precision and typographic quality. LaTeX offers fine-grained control over document formatting but can be complex to configure. This project addresses the need for a ready-to-use, flexible LaTeX resume template that simplifies producing professional CVs while allowing customization.
 
-## What Problem Does It Solve?
+## Project Composition
 
-Many architects and creative professionals struggle to find resume templates that balance aesthetics with functionality. Architect-resume solves this by providing a flexible LaTeX class that supports multiple page styles, highlight bars, and customizable sections. It allows users to create resumes that stand out while remaining easy to update and maintain.
+### Core LaTeX Template
 
-## How It's Built
+- `my-resume.cls`: A custom LaTeX class file defining the resume style, including fonts, colors, and layout rules.
+- `resume.tex`: The main LaTeX source file that imports the class and sections to assemble the full resume.
+- `sections/`: Directory containing modular LaTeX files for different resume sections, enabling easy content management.
 
-The core of the project is the `my-resume.cls` LaTeX class, which defines the layout, colors, fonts, and structural elements of the resume. The main document `resume.tex` imports this class and assembles the content, which is modularized into sections stored in the `sections` directory.
+### Build and Automation
 
-I also included a Python build script, `python-build.py`, which automates dependency installation and the build process using `make`. This script runs commands like `make clean` and `make html` to generate the PDF resume efficiently. The build system ensures that the resume can be rebuilt quickly and reliably, which is crucial when iterating on design and content.
+- `Makefile` (implied): Used to orchestrate build commands such as `make clean` and `make html` for cleaning and building the resume PDF.
+- `python-build.py`: A Python script automating dependency installation and build steps. It runs `pip install -r requirements.txt` to ensure Python dependencies are met, then executes `make clean` and `make html` to build the resume.
 
-## Interesting Implementation Details
+The script also includes placeholders for git operations (add, commit, push), suggesting planned integration for version control automation.
 
-- **XeLaTeX Compatibility:** Using XeLaTeX allows me to use system fonts and handle Unicode characters seamlessly, which is a big plus for internationalization and typographic finesse.
-- **Highlight Bars and Page Styles:** The template supports different page styles, including headers and highlight bars that can alternate sides for double-sided printing or stay fixed for single-sided layouts.
-- **Automated Build Pipeline:** The Python script integrates subprocess calls to `make` and pip, streamlining the build and dependency management process.
+### Assets
 
-## Why this project matters for my career
+- Images such as `head_shot.jpeg`, `picture.jpg`, and example resume PDFs (`resume-1.png`, etc.) provide visual references and content for the resume.
 
-Creating architect-resume has been more than just a personal project; it’s a reflection of my commitment to precision, design, and professionalism—qualities that are essential in architecture. By building and maintaining this template, I sharpen my LaTeX skills, automate workflows, and produce a polished resume that truly represents my brand. It also showcases my ability to blend technical skills with creative design, which is invaluable in my career development.
+## Implementation Details
 
----
+- The LaTeX class uses XeLaTeX to enable advanced typography and Unicode support, accommodating diverse fonts and character sets.
+- The modular section files allow users to add or modify content without altering the main template.
+- The build pipeline encapsulated in `python-build.py` uses Python's subprocess module to run shell commands, capturing and printing output for transparency.
+- Dependency management is handled via a `requirements.txt` file, although specifics of required Python packages are not detailed.
 
-If you're an architect or creative professional looking for a customizable and elegant resume solution, I hope architect-resume inspires you to take control of your own professional narrative through thoughtful design and automation.
+## Assumptions and Inferences
+
+- The presence of `make` commands implies a Makefile exists or is expected to be created to handle build targets.
+- The deployment directory `deployz` likely contains scripts or assets related to publishing or hosting the resume, though details are not provided.
+- The build script's git-related methods are partially implemented, indicating future plans for automated deployment or version control workflows.
+
+## Practical Considerations
+
+- Users need to have XeLaTeX installed, which is typically part of TeX Live or MikTeX distributions.
+- Python 3 and `make` utility are prerequisites for running the build automation.
+- Customization involves editing LaTeX source files and possibly the class file for style adjustments.
+
+## Summary
+
+This project serves as a technical foundation for producing architecturally styled resumes using LaTeX. It balances customization with automation, enabling efficient PDF generation and potential integration with version control systems. The modular design and build scripts provide a practical workflow for maintaining and updating professional resumes in a reproducible manner.
