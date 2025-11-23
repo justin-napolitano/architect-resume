@@ -1,26 +1,87 @@
-# my-resume
-Another LaTeX template for a resume/CV. This one was inspired by ![AltaCV](https://github.com/liantze/AltaCV) and various others but does exactly what I needed.
-It borrows a few lines of code from ![AltaCV](https://github.com/liantze/AltaCV) and ![AwesomeCV](https://github.com/posquit0/Awesome-CV).
+# architect-resume
 
-Note that my-resume runs on XeLaTeX.
+A LaTeX-based resume template designed for architects and professionals who want a clean, customizable CV built with XeLaTeX. This project provides a flexible resume layout with multiple page styles and options to highlight your professional profile effectively.
 
-An Overleaf template can be found here: ![overleaf template](https://www.overleaf.com/latex/templates/my-resume/qxsxdtmknkfr)  
-(Note that this template may not be the most up-to-date version. Try the latest version from GitHub first if you encounter problems.)
+---
 
-# Example PDF
+## Features
 
-The three pages below show most possibilities that are implemented in my-resume. There are different pagestyles available, colors, header and much more can be optimized to match your taste.
+- Clean, professional LaTeX resume template
+- Multiple page styles including headers and highlight bars
+- Support for single-sided and double-sided layouts
+- Easily customizable colors, fonts, and sections
+- XeLaTeX compatible for advanced font and Unicode support
+- Includes example PDFs demonstrating layout possibilities
 
-The default page style features a header and a highlight bar.
+## Tech Stack
 
-![Example PDF page 1](https://github.com/GiantMolecularCloud/my-resume/blob/main/resume-1.png "Example PDF page 1")
+- Primary Language: TeX (LaTeX)
+- Build Tools: Makefile (assumed from `make` commands in build script)
+- Python: helper build script (`python-build.py`) automates dependency installation and building process
 
-For consecutive pages, a layout with the highlight bar but without the header might be needed.
-Depending on the options for my-resume, the highlight bar can alternate between pages (option doublesided) or stay on the left side for all pages (option singlesided).
-In this case, the highlight bar is left empty and appears as a grey block.
+## Getting Started
 
-![Example PDF page 2](https://github.com/GiantMolecularCloud/my-resume/blob/main/resume-2.png "Example PDF page 2")
+### Prerequisites
 
-Empty pages are possible as well.
+- XeLaTeX installed (part of TeX Live or MikTeX distributions)
+- Python 3 (for running the build script)
+- `make` utility
 
-![Example PDF page 3](https://github.com/GiantMolecularCloud/my-resume/blob/main/resume-3.png "Example PDF page 3")
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/justin-napolitano/architect-resume.git
+cd architect-resume
+```
+
+Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Build the Resume
+
+You can build the resume PDF by running:
+
+```bash
+make clean
+make html
+```
+
+Or use the Python build script which automates this:
+
+```bash
+python python-build.py
+```
+
+## Project Structure
+
+```
+architect-resume/
+├── deployz/                 # Possibly deployment scripts or assets
+├── sections/                # Resume sections as separate LaTeX files
+├── my-resume.cls           # Custom LaTeX class defining the resume style
+├── resume.tex              # Main LaTeX source file
+├── resume.pdf              # Generated PDF resume
+├── python-build.py         # Python script automating build and deployment
+├── README.md               # This documentation file
+├── LICENSE                 # License file
+├── *.png, *.jpeg           # Example images and screenshots
+└── *.log, *.aux, *.out     # LaTeX auxiliary build files
+```
+
+## Future Work / Roadmap
+
+- Add detailed documentation for customizing the template
+- Support additional output formats (e.g., HTML or DOCX)
+- Integrate CI/CD pipeline for automated build and deployment
+- Expand example resumes showcasing different professions
+- Improve build script with error handling and logging
+- Add support for more languages/locales
+
+---
+
+*Note: This README is based on the current repository contents and inferred details.*
