@@ -1,12 +1,26 @@
 ---
-slug: "github-architect-resume"
-title: "architect-resume"
-repo: "justin-napolitano/architect-resume"
-githubUrl: "https://github.com/justin-napolitano/architect-resume"
-generatedAt: "2025-11-23T08:36:37.771367Z"
-source: "github-auto"
+slug: github-architect-resume
+title: LaTeX Resume Template with Build Automation for Architects
+repo: justin-napolitano/architect-resume
+githubUrl: https://github.com/justin-napolitano/architect-resume
+generatedAt: '2025-11-23T08:36:37.771367Z'
+source: github-auto
+summary: >-
+  Technical overview of an architect-focused LaTeX resume template using XeLaTeX and Python-based
+  build automation.
+tags:
+  - latex
+  - build-automation
+  - resume-template
+  - xelatex
+  - python
+seoPrimaryKeyword: latex resume template
+seoSecondaryKeywords:
+  - xelatex
+  - build automation
+  - architect resume
+seoOptimized: true
 ---
-
 
 # architect-resume: Technical Overview and Implementation Notes
 
@@ -57,3 +71,4 @@ The script also includes placeholders for git operations (add, commit, push), su
 ## Summary
 
 This project serves as a technical foundation for producing architecturally styled resumes using LaTeX. It balances customization with automation, enabling efficient PDF generation and potential integration with version control systems. The modular design and build scripts provide a practical workflow for maintaining and updating professional resumes in a reproducible manner.
+
