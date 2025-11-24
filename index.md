@@ -20,6 +20,13 @@ seoSecondaryKeywords:
   - build automation
   - architect resume
 seoOptimized: true
+topicFamily: latex
+topicFamilyConfidence: 0.95
+topicFamilyNotes: >-
+  The post focuses on a LaTeX resume template specifically for architects, involving LaTeX class
+  files, XeLaTeX, and build automation using Python and make. The 'latex' family specifically covers
+  LaTeX resume templates and build automation, and the post's slug matches an example slug in this
+  family.
 ---
 
 # architect-resume: Technical Overview and Implementation Notes
@@ -71,4 +78,5 @@ The script also includes placeholders for git operations (add, commit, push), su
 ## Summary
 
 This project serves as a technical foundation for producing architecturally styled resumes using LaTeX. It balances customization with automation, enabling efficient PDF generation and potential integration with version control systems. The modular design and build scripts provide a practical workflow for maintaining and updating professional resumes in a reproducible manner.
+
 
