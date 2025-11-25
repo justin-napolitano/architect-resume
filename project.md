@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/architect-resume
 generatedAt: '2025-11-24T21:33:58.606Z'
 source: github-auto
 summary: >-
-  A flexible, XeLaTeX-based resume template for architects, featuring
-  customizable layouts and easy installation.
+  A flexible, XeLaTeX-based resume template for architects, featuring customizable layouts and easy
+  installation.
 tags:
   - latex
   - xelatex
@@ -25,8 +25,8 @@ seoSecondaryKeywords:
   - LaTeX project structure
   - Python build script
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: latex
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -114,4 +114,5 @@ architect-resume/
 - Expand documentation with usage examples and customization guides
 - Support additional output formats such as HTML or Word exports
 - Improve build script with error handling and logging
+
 
