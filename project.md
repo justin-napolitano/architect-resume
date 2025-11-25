@@ -1,20 +1,30 @@
 ---
 slug: github-architect-resume
 id: github-architect-resume
-title: architect-resume
+title: LaTeX Resume Template for Architects and Professionals
 repo: justin-napolitano/architect-resume
 githubUrl: https://github.com/justin-napolitano/architect-resume
 generatedAt: '2025-11-24T21:33:58.606Z'
 source: github-auto
 summary: >-
-  A LaTeX-based resume template tailored for architects and professionals
-  seeking a clean, customizable CV built with XeLaTeX. This project offers a
-  flexible layout with multiple page styles to effectively showcase your
-  professional profile.
-tags: []
-seoPrimaryKeyword: ''
-seoSecondaryKeywords: []
-seoOptimized: false
+  A customizable LaTeX resume template for architects, featuring multiple
+  layouts and XeLaTeX support for advanced typography.
+tags:
+  - latex
+  - xelatex
+  - resume
+  - python
+  - makefile
+  - cv
+  - customization
+seoPrimaryKeyword: latex resume template for architects
+seoSecondaryKeywords:
+  - customizable CV
+  - XeLaTeX resume
+  - build PDF resume
+  - resume layout options
+  - Python build script
+seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
 kind: project
