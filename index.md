@@ -1,32 +1,42 @@
 ---
 slug: github-architect-resume
-title: LaTeX Resume Template with Build Automation for Architects
+title: 'LaTeX Resume Template for Architects: Implementation Guide'
 repo: justin-napolitano/architect-resume
 githubUrl: https://github.com/justin-napolitano/architect-resume
 generatedAt: '2025-11-23T08:36:37.771367Z'
 source: github-auto
 summary: >-
-  Technical overview of an architect-focused LaTeX resume template using XeLaTeX and Python-based
-  build automation.
+  Explore a customizable LaTeX resume template designed for architects,
+  featuring automation and modular content management.
 tags:
   - latex
   - build-automation
   - resume-template
   - xelatex
   - python
-seoPrimaryKeyword: latex resume template
+  - resume template
+  - XeLaTeX
+  - Python
+  - Makefile
+  - CV design
+  - automation
+seoPrimaryKeyword: latex resume template for architects
 seoSecondaryKeywords:
-  - xelatex
+  - customizable CV
   - build automation
-  - architect resume
+  - modular LaTeX
+  - XeLaTeX features
+  - resume design workflow
 seoOptimized: true
 topicFamily: latex
 topicFamilyConfidence: 0.95
 topicFamilyNotes: >-
-  The post focuses on a LaTeX resume template specifically for architects, involving LaTeX class
-  files, XeLaTeX, and build automation using Python and make. The 'latex' family specifically covers
-  LaTeX resume templates and build automation, and the post's slug matches an example slug in this
-  family.
+  The post focuses on a LaTeX resume template specifically for architects,
+  involving LaTeX class files, XeLaTeX, and build automation using Python and
+  make. The 'latex' family specifically covers LaTeX resume templates and build
+  automation, and the post's slug matches an example slug in this family.
+kind: project
+id: github-architect-resume
 ---
 
 # architect-resume: Technical Overview and Implementation Notes
